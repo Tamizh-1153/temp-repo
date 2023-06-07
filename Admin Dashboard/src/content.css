@@ -1,0 +1,70 @@
+.sidebar.toggled {
+  width: 0 !important;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 6.5rem;
+  min-height: 100vh;
+  background-color: #4e73df;
+  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+}
+
+.sidebar-dark .sidebar-brand {
+  color: #fff;
+}
+
+hr.sidebar-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin: 0 1rem 1rem;
+}
+
+.sidebar li {
+  color: whitesmoke;
+  margin-left: 20px;
+  line-height: 2.5;
+}
+#sidebarToggle {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+#sidebarToggle::after {
+    font-weight: 900;
+    content: '\f104';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: .1rem;
+        color: #3e3f47;
+}
+
+.sidebar-heading {
+  margin-left: 20px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.sidebar .sidebar-brand {
+  height: 4.375rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .sidebar.toggled {
+    overflow: visible;
+    width: 6.5rem !important;
+  }
+
+  .sidebar {
+    width: 14rem !important;
+  }
+}
